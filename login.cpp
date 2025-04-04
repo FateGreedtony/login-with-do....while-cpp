@@ -32,13 +32,17 @@ int main(){
             cin >> pass;
             // end of logic
         } else {
-            cout << "akun mu kebanned\n";
             break;
         }
     } while (!((userName == "Malik") && (pass == 1234)));
 
-    cout << "Selamat datang di akun. Jumlah percobaan: " << jumlahCoba << endl;
-
+    // start of banning afterword
+    if(jumlahCoba <= 3){
+        cout << "Selamat datang di akun. Jumlah percobaan: " << jumlahCoba << endl;
+    } else {
+         cout << "perangkat ini dibanned karena telah salah login sejumlah: " << jumlahCoba << " kali" << endl;
+    }
+    // end of banning afterword
 
     system("pause");
     return 0;
