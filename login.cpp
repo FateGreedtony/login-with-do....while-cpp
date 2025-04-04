@@ -14,24 +14,31 @@ int main(){
     
     
     do{
-        do
-        {
+        ++jumlahCoba;
+
+        // start of resetting the name & pass
+        do{
             string userName = "";
             int pass = 0;
         } while (false);
-        ++jumlahCoba;
+        // start of resetting the name & pass
 
-        
-        // start of logic
-        cout << "Masukkan username: ";
-        cin >> userName;
-        cout << "Masukkan Password: ";
-        cin >> pass;
-        // end of logic
-
+        // logic for banning system
+        if(jumlahCoba <= 3){
+            // start of logic
+            cout << "Masukkan username: ";
+            cin >> userName;
+            cout << "Masukkan Password: ";
+            cin >> pass;
+            // end of logic
+        } else {
+            cout << "akun mu kebanned\n";
+            break;
+        }
     } while (!((userName == "Malik") && (pass == 1234)));
-    
+
     cout << "Selamat datang di akun. Jumlah percobaan: " << jumlahCoba << endl;
+
 
     system("pause");
     return 0;
