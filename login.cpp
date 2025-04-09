@@ -38,9 +38,9 @@ int main(){
 
     // start of banning afterword
     if(jumlahCoba <= 3){
-        cout << "Selamat datang di akun. Jumlah percobaan: " << jumlahCoba << endl;
+        cout << "Selamat datang di akun. Jumlah percobaan login: " << jumlahCoba << endl;
     } else {
-         cout << "perangkat ini dibanned karena telah salah login sejumlah: " << jumlahCoba << " kali" << endl;
+         cout << "perangkat ini dibanned karena telah salah login sejumlah: " << jumlahCoba - 1 << " kali" << endl;
     }
     // end of banning afterword
 
